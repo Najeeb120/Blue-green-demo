@@ -1,13 +1,8 @@
-##  Blue Green deployment of python Hello world application with Jenkins pipeline on Kind cluster ##
-
-
-
-
 
 
 ### Create Kind cluster
 
-```
+```bash
 kind create cluster --name deployment-test-cluster --image= kindest/node:v1.29.14@sha256:8703bd94ee24e51b778d5556ae310c6c0fa67d761fae6379c8e0bb480e6fea29
 '''
 
@@ -22,7 +17,3 @@ kind create cluster --name deployment-test-cluster --image= kindest/node:v1.29.1
 1.  Define stages in Jenkins pipeline ranging from checkout SCM to deploying target version.
 
 2. Once testing is completed switch traffic from application version-1 to version-2.
-
-
-
-
