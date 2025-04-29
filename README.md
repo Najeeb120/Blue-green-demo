@@ -4,7 +4,6 @@
 
 ```bash
 kind create cluster --name deployment-test-cluster --image= kindest/node:v1.29.14@sha256:8703bd94ee24e51b778d5556ae310c6c0fa67d761fae6379c8e0bb480e6fea29
-'''
 
 ### 2.Deploy Jenkins on Kind cluster
 
