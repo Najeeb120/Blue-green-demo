@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: hello-app-green
+spec:
+      replicas: 2
+      selector:
+        matchLabels:
+          app: hello-app
+          version: green    
+      template:
+        metadata:
+          labels:
+            app: hello-app
+            version: green
+        spec:
+          containers:
+            - name: python-hello
+              image:  name/python-hello:v2
+          ports:
+              containerPort: 5000
