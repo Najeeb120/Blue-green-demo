@@ -1,9 +1,19 @@
- - name: Checkout Repository
-   uses: actions/checkout@v3
 
-  
- - name: Print date
-   run: date
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: info
+        run: date
+
+
+
+
 
 
 
