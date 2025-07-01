@@ -1,7 +1,7 @@
+name: Manual Run Example
 
 on:
-  workflow_dispatch:
-
+  workflow_dispatch:
 
 jobs:
   build:
@@ -10,13 +10,5 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: info
+      - name: Print Date
         run: date
-
-
-
-
-
-
-
-
