@@ -1,4 +1,6 @@
 
+on:
+  workflow_dispatch:
 
 
 jobs:
